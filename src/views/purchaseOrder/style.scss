@@ -1,0 +1,19 @@
+.counterCell:before {              
+    content: counter(tableCount); 
+    counter-increment: tableCount; 
+}
+
+table {
+    counter-reset: tableCount;     
+}
+.brand-all {
+    width: 140px;
+}
+.margin{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: -8px;
+  width: 100%;
+  height: 28px;
+}

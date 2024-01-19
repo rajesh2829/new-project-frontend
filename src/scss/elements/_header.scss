@@ -1,0 +1,93 @@
+.navbar {
+  padding: 0.75rem 0;
+  height: 60px;
+  flex-wrap: nowrap !important;
+  background: $color-white;
+
+  .site-logo {
+    img {
+      // max-width: 140px;
+      height: 40px;
+    }
+  }
+
+  &.bg-white-ivory {
+    .nav-link {
+      color: $color-dark-purple;
+    }
+  }
+}
+
+// .dropdown-popup-profile {
+//   .edit-profile-name {
+//     margin-left: 62px;
+//     margin-top: -43px;
+//     font-size: $span-font-size;
+//     font-weight: 600;
+//   }
+
+//   .dropdown-item {
+//     margin-top: 10px;
+//     font-size: $label-font-size;
+//   }
+
+//   .dropdown-menu.show {
+//     width: 250px;
+//     height: auto;
+//     background-color: $color-white;
+//     border-radius: 0.5rem;
+//     overflow: hidden;
+
+//     .dropdown-item:hover {
+//       background-color: transparent;
+
+//       a {
+//         text-decoration: none;
+//       }
+//     }
+
+//     .edit-profile-logout {
+//       color: red;
+//     }
+//   }
+
+//   .dropdown-menu {
+//     top: 69px;
+//   }
+// }
+
+// utility list
+// .utility-list {
+//   margin-right: 0.8125rem;
+//   li {
+//     a {
+//       padding: 0 0.8125rem;
+//     }
+//   }
+// }
+
+// sub navigation
+// .sub-navigation {
+//   padding: 1rem 0.875rem;
+//   background-color: $color-dark-purple;
+//   p {
+//     font-size: 0.875rem;
+//     margin-bottom: 0;
+//     color: $color-white;
+//     svg {
+//       margin: 0 0.5rem 0 0;
+//     }
+//   }
+//   &:hover {
+//     cursor: pointer;
+//     text-decoration: underline;
+//   }
+// }
+
+// login btn
+.login-btn {
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}

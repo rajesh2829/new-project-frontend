@@ -1,0 +1,121 @@
+.switch-wrapper {
+  justify-content: stretch;
+  align-items: center;
+  h6 {
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+.switch {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  outline: none;
+  margin-bottom: 0;
+  input {
+    visibility: hidden;
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-background-gray;
+    border: 1px solid $tab-inactive-border;
+    -webkit-transition: 0.4s;
+    transition: 280ms;
+    border-radius: 34px;
+    &::before {
+      position: absolute;
+      content: "";
+      height: 30px;
+      width: 30px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: 280ms;
+      transition: 280ms;
+      border-radius: 100%;
+      border: 1px solid $tab-inactive-border;
+    }
+  }
+  input {
+    &:checked + .slider {
+      background-color: #0ac297;
+      border-color: #0ac297;
+    }
+    &:focus + .slider {
+      box-shadow: 0 0 1px #0ac297;
+    }
+    &:checked + .slider {
+      &::before {
+        -webkit-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+        transform: translateX(40px);
+      }
+    }
+  }
+}
+
+.switch-wrapper {
+  &.small {
+    .switch {
+      width: 32px;
+      height: 20px;
+      .slider {
+        &::before {
+          height: 12px;
+          width: 12px;
+          left: 3px;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+  &.primary {
+    &.active {
+      p {
+        color: $color-cerulean;
+      }
+    }
+    p {
+      color: $text-inline-grayed;
+      margin-right: 0.5rem;
+      font-weight: 400 !important;
+    }
+    .switch {
+      input {
+        &:checked + .slider {
+          background-color: $color-cerulean;
+        }
+        &:focus + .slider {
+          box-shadow: 0 0 1px $color-cerulean;
+        }
+      }
+    }
+    &.outlined {
+      .switch {
+        .slider {
+          background-color: transparent;
+          border: 2px solid #ccc;
+          &:before {
+            background-color: #ccc;
+          }
+        }
+        input {
+          &:checked + .slider {
+            background-color: transparent;
+            border: 2px solid $color-cerulean;
+            &:before {
+              background-color: $color-cerulean;
+              transform: translateX(11px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

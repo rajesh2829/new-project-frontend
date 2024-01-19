@@ -1,0 +1,23 @@
+@import "../../scss/_variables.scss";
+.upload-button {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  font-size: 12px !important;
+  font-weight: bold !important;
+  border-radius: 7px !important;
+  background-color: $primary-button-color !important;
+  padding: 0.39rem;
+  padding-inline: 1rem;
+  margin-bottom: 0 !important;
+  color: #fff !important;
+  margin-left: 0.5rem;
+  min-width: 6rem;
+  min-height: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .upload-button {
+    min-width: 3.5rem !important;
+  }
+}

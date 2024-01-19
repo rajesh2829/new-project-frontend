@@ -1,0 +1,46 @@
+{
+  "env": {
+    "amd": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": false
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+        "presets": ["@babel/preset-react"]
+      },
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "extends": ["prettier", "prettier/flowtype", "prettier/react"]
+  },
+  "plugins": ["prettier", "react"],
+  "rules": {
+    "react/prop-type": 0,
+    "quotes": ["off", "double"],
+    "array-bracket-newline": ["error", { "multiline": true }],
+    "block-spacing": "error",
+    "camelcase": ["off", {"ignoreGlobals": true}],
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "react/prop-types": "off",
+    "node/handle-callback-err": "off",
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-children-prop": "off",
+    "no-unused-vars": 0
+  },
+  "settings": {
+    "import/parsers": {
+      "espree": [
+        ".js",
+        ".jsx"
+      ],
+    "ecmascript": 8,
+    "jsx": true
+    }
+  }
+}

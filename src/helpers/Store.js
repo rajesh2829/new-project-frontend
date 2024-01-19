@@ -1,0 +1,125 @@
+/**
+ * Table
+ */
+export const REQUEST_TABLE_LIST = "REQUEST_TABLE_LIST";
+export const RECEIVE_TABLE_LIST = "RECEIVE_TABLE_LIST";
+export const FETCH_TABLE_LIST_FAIL = "FETCH_TABLE_LIST_FAIL";
+export const SET_TABLE_PAGE = "SET_TABLE_PAGE";
+export const CLEAR_TABLE_LIST = "CLEAR_TABLE_LIST";
+export const ACTIVE = "1";
+export const IN_ACTIVE = "0";
+
+/**
+ * Product
+ */
+export const REQUEST_PRODUCT_LIST = "REQUEST_PRODUCT_LIST";
+export const RECEIVE_PRODUCT_LIST = "RECEIVE_PRODUCT_LIST";
+export const PRODUCT_LIST_ERROR = "PRODUCT_LIST_ERROR";
+
+/**
+ * Vendor Product
+ */
+export const REQUEST_VENDOR_PRODUCT_LIST = "REQUEST_VENDOR_PRODUCT_LIST";
+export const RECEIVE_VENDOR_PRODUCT_LIST = "RECEIVE_VENDOR_PRODUCT_LIST";
+export const VENDOR_PRODUCT_LIST_ERROR = "VENDOR_PRODUCT_LIST_ERROR";
+export const REQUEST_CREATE_VENDOR_PRODUCT = "REQUEST_CREATE_VENDOR_PRODUCT";
+export const RECEIVE_CREATE_VENDOR_PRODUCT = "RECEIVE_CREATE_VENDOR_PRODUCT";
+export const VENDOR_PRODUCT_CREATE_ERROR = "VENDOR_PRODUCT_CREATE_ERROR";
+
+/**
+ * Product Image
+ */
+export const REQUEST_PRODUCT_IMAGE_LIST = "REQUEST_PRODUCT_IMAGE_LIST";
+export const RECEIVE_PRODUCT_IMAGE_LIST = "RECEIVE_PRODUCT_IMAGE_LIST";
+export const PRODUCT_IMAGE_LIST_ERROR = "PRODUCT_IMAGE_LIST_ERROR";
+
+/**
+ * Product Brand
+ */
+export const REQUEST_CREATE_NEW_BRAND = "REQUEST_CREATE_NEW_BRAND";
+export const RECEIVE_CREATE_NEW_BRAND = "RECEIVE_CREATE_NEW_BRAND";
+export const NEW_BRAND_CREATE_ERROR = "CREATE_NEW_BRAND_CREATE_ERROR";
+
+/**
+ * Sync
+ */
+export const REQUEST_SYNC_LIST = "REQUEST_SYNC_LIST";
+export const RECEIVE_SYNC_LIST = "RECEIVE_SYNC_LIST";
+export const SYNC_LIST_ERROR = "SYNC_LIST_ERROR";
+
+/**
+ * Store
+ */
+export const REQUEST_CREATE_NEW_STORE = "REQUEST_CREATE_NEW_STORE";
+export const RECEIVE_CREATE_NEW_STORE = "RECEIVE_CREATE_NEW_STORE";
+export const NEW_STORE_CREATE_ERROR = "NEW_STORE_CREATE_ERROR";
+
+/**
+ * Apartment
+ */
+export const REQUEST_CREATE_NEW_APARTMENT = "REQUEST_CREATE_NEW_APARTMENT";
+export const RECEIVE_CREATE_NEW_APARTMENT = "RECEIVE_CREATE_NEW_APARTMENT";
+export const NEW_APARTMENT_CREATE_ERROR = "NEW_APARTMENT_CREATE_ERROR";
+
+/**
+ * Store Product
+ */
+export const REQUEST_STORE_PRODUCT_LIST = "REQUEST_STORE_PRODUCT_LIST";
+export const RECEIVE_STORE_PRODUCT_LIST = "RECEIVE_STORE_PRODUCT_LIST";
+export const PRODUCT_STORE_LIST_ERROR = "PRODUCT_STORE_LIST_ERROR";
+
+/**
+ * Inventory
+ */
+export const REQUEST_CREATE_NEW_INVENTORY = "REQUEST_CREATE_NEW_INVENTORY";
+export const RECEIVE_CREATE_NEW_INVENTORY = "RECEIVE_CREATE_NEW_INVENTORY";
+export const NEW_INVENTORY_CREATE_ERROR = "NEW_INVENTORY_CREATE_ERROR";
+
+/**
+ * Order
+ */
+export const REQUEST_CREATE_NEW_ORDER = "REQUEST_CREATE_NEW_ORDER";
+export const RECEIVE_CREATE_NEW_ORDER = "RECEIVE_CREATE_NEW_ORDER";
+export const NEW_ORDER_CREATE_ERROR = "NEW_ORDER_CREATE_ERROR";
+
+/**
+ * Customer
+ */
+export const REQUEST_CREATE_NEW_CUSTOMER = "REQUEST_CREATE_NEW_CUSTOMER";
+export const RECEIVE_CREATE_NEW_CUSTOMER = "RECEIVE_CREATE_NEW_CUSTOMER";
+export const NEW_CUSTOMER_CREATE_ERROR = "NEW_CUSTOMER_CREATE_ERROR";
+
+export const GENERAL_TAB = "General";
+export const SHOPIFY_TAB = "Shopify";
+export const ADDRESS_TAB = "Address";
+export const CONTACT_TAB = "Contacts";
+export const PRODUCT_TAB = "Products"
+export const STATUS_ACTIVE_TEXT = "Active";
+export const STATUS_INACTIVE_TEXT = "InActive";
+export const FILES_TAB = "Files";
+export const TEAM_TAB = "Team"
+export const HISTORY_TAB="History"
+export const SETTINGS_TAB = "Settings";
+
+// Allow Sale Enable and Disable
+export const ALLOW_SALE_ENABLE = 1;
+export const ALLOW_SALE_DISABLE = 0;
+
+export const statusList = [
+
+    {
+      label: "Active",
+      value: "1",
+    },
+
+    {
+      label: "InActive",
+      value: "0",
+
+    }
+  ]
+  export const Store = {
+    STATUS_ACTIVE: "Active",
+   STATUS_INACTIVE:"InActive",
+  };
+  

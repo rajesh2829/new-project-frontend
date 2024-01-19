@@ -1,0 +1,12 @@
+// 1. General styles Tablet
+@include tablet {
+  .container {
+    max-width: 100% !important;
+  }
+}
+// 2. General styles Mobile
+@media all and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}

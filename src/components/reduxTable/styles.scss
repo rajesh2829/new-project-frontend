@@ -1,0 +1,117 @@
+@import "../../scss/variables";
+.mouse{
+  cursor: pointer;
+}
+.redux-table {
+  .search-input {
+    position: relative;
+
+    input {
+      height: 35px;
+      padding-right: 30px;
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      line-height: 35px;
+    }
+
+    .loader {
+      right: 10px;
+      top: 10px;
+      border: 2px solid #ddd;
+      border-radius: 50%;
+      border-top: 2px solid #3498db;
+      width: 15px;
+      height: 15px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      position: absolute;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  // Redux table start
+  .table {
+    th {
+      font-weight: 400;
+      padding: 0.5rem 0.5rem 0.5rem 1rem;
+      border: 1px solid #292934;
+      border-right: 1px solid #000;
+
+      svg {
+        float: right;
+        padding: 3px;
+        width: 16px;
+        height: 16px;
+      }
+      &.action-column {
+        width: 90px;
+      }
+    }
+
+  
+
+    tbody {
+      background-color: #fff;
+    }
+
+    .thead-light th {
+      background-color: #292934;
+      color: #fff;
+      vertical-align: top;
+    }
+    .dropdown-wrapper {
+      &.more-dropdown {
+        .dropdown {
+          > .btn {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.scroll{
+  overflow-y: scroll;
+  height: calc(100vh - 30rem);
+}
+
+.column-status{
+  table-layout: fixed;
+width: 150px;
+}
+// product tag- type column width
+.column-type
+{
+  table-layout: fixed;
+  width: 150px;
+}
+
+#sign-out{
+  color:rgb(245, 34, 34);
+}
+#sign-out:hover{
+  color:rgb(24, 23, 23);
+}

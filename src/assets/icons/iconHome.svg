@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>7E4D267D-C1F2-4EB4-AC20-FCAF428FD091@2x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard---Expert" transform="translate(-162.000000, -83.000000)" fill="currentColor" fill-rule="nonzero">
+            <g id="Active---Dashboard" transform="translate(148.000000, 70.000000)">
+                <g id="Dashboard" transform="translate(13.000000, 13.000000)">
+                    <path d="M23,11 C23,7.963 21.768,5.211 19.778,3.222 C17.788,1.233 15.037,0 12,0 C8.963,0 6.211,1.232 4.222,3.222 C2.233,5.212 1,7.963 1,11 C1,14.037 2.232,16.789 4.222,18.778 C6.212,20.767 8.963,22 12,22 C15.037,22 17.789,20.768 19.778,18.778 C21.767,16.788 23,14.037 23,11 Z M21,11 C21,13.486 19.994,15.734 18.364,17.364 C16.734,18.994 14.486,20 12,20 C9.514,20 7.266,18.994 5.636,17.364 C4.006,15.734 3,13.486 3,11 C3,8.514 4.006,6.266 5.636,4.636 C7.266,3.006 9.514,2 12,2 C14.486,2 16.734,3.006 18.364,4.636 C19.994,6.266 21,8.514 21,11 Z M9,7 C8.448,7 8,7.448 8,8 L8,14 C8,14.552 8.448,15 9,15 L15,15 C15.552,15 16,14.552 16,14 L16,8 C16,7.448 15.552,7 15,7 L9,7 Z M10,9 L14,9 L14,13 L10,13 L10,9 Z" id="icon-home"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

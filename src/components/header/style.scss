@@ -1,0 +1,45 @@
+.portal-logo {
+    width: 90px;
+
+    @media (max-width: 480px) {
+        width: 135px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 987px) and (max-width: 1066px) {
+    .nav-link {
+      display: none;
+    }
+  }
+@media (min-width: 1000px) and (max-width: 1076px) {
+    .nav-link-show {
+      display:block !important;
+    }
+  }
+
+
+  @media (min-width:991px) {
+    .logo-min-width{
+      min-width: 235px;
+      display: flex;
+      justify-content: center;
+      margin-left: -10px;
+      align-self: center;
+    }
+    .logo-min-width img{
+      min-width: 150px;
+    }
+  }
+
+  @media (max-width:500px) {
+    .logo-min-width{
+      min-width: 235px;
+    }
+    .logo-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-left: 15px;
+      align-self: center;
+    }
+  } 

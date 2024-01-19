@@ -1,0 +1,76 @@
+
+.carousel-container .custom-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: xx-large;
+}
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; 
+  margin-top: 100px;
+}
+
+
+.carousel-container .custom-arrow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-width: 6px 6px 0 0;
+  border-color: rgb(0, 0, 0);
+}
+
+.carousel-container .custom-arrow.prev::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-container .custom-arrow.next::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.custom-dot {
+  width: 20px;
+  height: 20px;
+  background-color:transparent;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.custom-dot.selected {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.carousel .control-dots{
+  display: flex;
+  justify-content: center;
+  bottom: 40px;
+}
+
+.arrow-image {
+  filter: brightness(0) invert(1);
+}
+.carousel .slide img {
+  pointer-events: all;
+}
+.ReactModal__Content--after-open{
+overflow-y: auto !important;
+}
+.ril__inner{
+  overflow: auto;
+}

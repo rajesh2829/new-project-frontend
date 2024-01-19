@@ -1,0 +1,56 @@
+.inline-tooltip-wrapper {
+  margin: 0.625rem 0 0;
+  span {
+    display: flex;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+.sample-project-tooltip,
+.recruitment-tooltip {
+  &.tooltip {
+    &.show {
+      opacity: 1;
+    }
+    .tooltip-inner {
+      padding: 1.125rem;
+      background-color: $color-dark;
+      color: $color-white;
+      text-align: left;
+      max-width: 370px;
+      border-radius: 0;
+      p {
+        margin-bottom: 0.375rem;
+      }
+    }
+  }
+  .steps-placeholder {
+    .steps-wrapper {
+      margin-top: 1.125rem;
+      .step {
+        .bg-white {
+          border-color: transparent;
+          .feather {
+            color: $color-cerulean;
+          }
+        }
+      }
+    }
+  }
+
+  &.bs-tooltip-top .arrow::before {
+    border-top-color: $color-dark;
+  }
+  &.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: $color-dark;
+  }
+  &.bs-tooltip-right .arrow::before {
+    border-right-color: $color-dark;
+  }
+  &.bs-tooltip-left .arrow::before {
+    border-left-color: $color-dark;
+  }
+}

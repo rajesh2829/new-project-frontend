@@ -1,0 +1,105 @@
+// marketplace section styles
+.section {
+  padding: 60px 0;
+
+  &:not(.banner) {
+    +.section {
+      &:not(.banner-small) {
+        padding-top: 0;
+
+        &:not(:last-child) {
+          margin-bottom: -1.5rem;
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    padding: 40px 0;
+  }
+
+  &.section-xsmall {
+    padding: 20px 0 40px;
+  }
+
+  &.salesforce-playbooks {
+    padding: 40px 0 60px;
+  }
+}
+
+.section-title {
+
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-bottom: 2.5rem;
+
+    &:after {
+      content: " ";
+      height: 1px;
+      width: 140px;
+      margin: 0.625rem 0 0;
+      background-color: #df674c;
+      display: block;
+    }
+
+    +p {
+      margin-top: -0.5rem;
+    }
+  }
+
+  p {
+    &:last-child {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .author {
+    display: block;
+    margin-top: -1rem;
+    opacity: 0.5;
+  }
+}
+
+// sections inside content-wrappers
+.site-maincontent {
+  .section {
+    padding: 40px 0;
+
+    &:first-of-type {
+      &:not(.banner) {
+        padding-top: 0;
+      }
+    }
+
+    &.banner {
+      .container {
+        padding: 0;
+      }
+    }
+
+    .container {
+      max-width: none;
+      padding: 0;
+    }
+
+    .content-wrapper {
+      >.row {
+        margin: 0;
+      }
+    }
+
+    .row {
+      width: 100%;
+    }
+  }
+
+  @include mobile {
+    .section {
+      padding: 30px 0;
+    }
+  }
+}

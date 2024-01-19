@@ -1,0 +1,382 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+#sidebar {
+  @media screen and (min-width: 991px) {
+    min-width: 250px;
+  }
+
+  border-right: 1px solid #e2e2e8;
+  color: lightgray;
+  min-height: calc(100vh - 61px); // minus the navbar height
+  position: relative;
+
+  ul {
+    // border-bottom: 1px solid $color-background-gray;
+
+    p {
+      color: #292934;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    li {
+      border-left: 3px solid transparent;
+      transition: all 180ms ease;
+
+      &.active {
+        background-color: #fff;
+        border-left: 3px solid $color-cerulean;
+
+        svg {
+          color: $color-cerulean;
+
+          path {
+            fill: currentColor !important;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.8125rem 0.875rem;
+        font-size: 1rem;
+        color: #292934;
+        text-decoration: none;
+      }
+
+      svg {
+        max-height: 22px;
+        margin: 0 1rem 0 0;
+        min-width: 24px;
+
+        @include tablet {
+          margin-right: 0;
+        }
+      }
+
+      &:hover {
+        background-color: #fff;
+        border-left: 3px solid #3572b0;
+        color: #000;
+
+        .sidebar-menu {
+          color: #2496cd;
+        }
+      }
+    }
+  }
+}
+
+
+#sidebar-sidenav {
+  @media screen and (min-width: 991px) {
+    max-width: 80px;
+  }
+
+  border-right: 1px solid #e2e2e8;
+  color: lightgray;
+  min-height: calc(100vh - 61px); // minus the navbar height
+  position: relative;
+
+  ul {
+    // border-bottom: 1px solid $color-background-gray;
+
+    p {
+      color: #292934;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    li {
+      border-left: 3px solid transparent;
+      transition: all 180ms ease;
+
+      &.active {
+        background-color: #fff;
+        border-left: 3px solid $color-cerulean;
+
+        svg {
+          color: $color-cerulean;
+
+          path {
+            fill: currentColor !important;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0.8125rem 0.875rem;
+        font-size: 1rem;
+        color: #292934;
+        text-decoration: none;
+      }
+
+      svg {
+        max-height: 22px;
+        margin: 0 1rem 0 0;
+        min-width: 24px;
+
+        @include tablet {
+          margin-right: 0;
+        }
+      }
+
+      &:hover {
+        background-color: #fff;
+        border-left: 3px solid #3572b0;
+        color: #000;
+
+        .sidebar-menu {
+          color: #2496cd;
+        }
+      }
+    }
+  }
+}
+
+a[aria-expanded="true"] {
+  color: #292934;
+}
+
+// Admin Setting sidebar
+.admin-setting {
+  @media only screen and (min-width: 770px) {
+    margin-left: -30px !important;
+  }
+
+  .sidemenu {
+    background-color: $color-white;
+    width: 250px;
+    min-height: calc(100vh - 61px);
+
+    .nav-pills {
+      .nav-item {
+        border-bottom: 1px solid $color-light-white4;
+        cursor: pointer;
+
+        .active {
+          background-color: $color-white;
+          color: $color-nav-active !important;
+        }
+
+        .nav-link {
+          border-bottom: 0;
+          border-left: 0;
+          border-right: 0;
+          color: $color-nav-link;
+        }
+      }
+    }
+  }
+}
+
+.sidemenu .admin-setting {
+  @media screen and (min-width: 991px) and (max-width: 1200px) {
+    width: 50%;
+  }
+}
+
+.admin-setting {
+  @media screen and (min-width: 991px) and (max-width: 1400px) {
+    margin-left: -30px !important;
+
+    .secondary-menu {
+      background-color: $color-white;
+      width: 244px;
+
+      .nav-pills {
+        .nav-item {
+          border-bottom: 1px solid $color-light-white;
+          cursor: pointer;
+
+          .active {
+            background-color: $color-white;
+            color: $color-nav-active !important;
+          }
+
+          .nav-link {
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+            color: $color-nav-link;
+          }
+        }
+      }
+    }
+  }
+}
+
+.admin-setting {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-left: -30px !important;
+    height: 1450px;
+  }
+
+  .secondary-menu {
+    background-color: $color-white;
+    width: 207px;
+
+    .nav-pills {
+      .nav-item {
+        border-bottom: 1px solid $color-light-white4;
+        cursor: pointer;
+
+        .active {
+          background-color: $color-white;
+          color: $color-nav-active !important;
+        }
+
+        .nav-link {
+          border-bottom: 0;
+          border-left: 0;
+          border-right: 0;
+          color: $color-nav-link;
+        }
+      }
+    }
+  }
+}
+
+.quickMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .quickMenuIcon {
+    cursor: pointer;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      margin: 0px;
+    }
+  }
+
+  &.collapsed {
+    .quickMenuIcon {
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+
+    .quickMenuContent {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+  }
+
+  &.expanded {
+    // background-color: #ffffff;
+    transition: background-color 0.3s;
+    height: 100%;
+    // min-height: calc(100vh - 61px);
+    width: 249px;
+
+    .quickMenuContent {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s;
+
+      .quickMenuItemContainer {
+        // display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px 0;
+
+        h6 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.cardSection {
+  background-color: rgb(240, 240, 240) !important;
+  min-height: calc(100vh - 61px);
+}
+
+@media screen and (min-width: 992px) {
+  .quickMenu {
+    .quickMenuIcon {
+      margin-left: 30px;
+      margin-top: 0px;
+    }
+
+    &.collapsed {}
+
+    &.expanded {}
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .quickMenu {
+    .quickMenuIcon {
+      margin-left: 25px;
+    }
+
+    &.collapsed {}
+
+    &.expanded {}
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .portalLogo {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar-wrapper {
+    width: 250px;
+  }
+}
+
+.app-options {
+  height: 50px;
+  width: 247px;
+  border-left: 3px solid #3572b000;
+}
+
+.app-options:hover {
+  background-color: rgb(255, 255, 255);
+  border-left: 3px solid #3572b0;
+  height: 50px;
+  width: 247px;
+}
+
+.docslist {
+  position: relative;
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .admin-setting .sidemenu {
+    width: 100%;
+  }
+
+  .docslist {
+    width: 60%;
+  }
+}

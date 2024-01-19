@@ -1,0 +1,159 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .dashboard-right-side-section {
+    padding: 7rem 2rem 7rem 2rem !important;
+  }
+}
+
+// wizard related styles
+.dashboard-right-side-section {
+  padding: 7rem 7rem 7rem 7.375rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  justify-content: stretch;
+  flex-wrap: nowrap !important;
+  min-height: 100%;
+
+  .btn-wrapper {
+    margin: 1.5rem 0 0;
+
+    .btn {
+      font-size: 0.875rem;
+      font-weight: bold;
+    }
+
+    svg {
+      height: 20px;
+      margin: 0 0 0 0.5rem;
+    }
+  }
+
+  >form {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &.form-wrapper {
+    .field-wrapper {
+      margin-bottom: 0;
+
+      label {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .content-wrapper {
+    max-width: 484px;
+    margin-bottom: 2.5rem;
+
+    &.custom-width {
+      @include medium-desktop {
+        margin-right: -30px;
+      }
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+
+    .content {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .accepted-terms {
+    margin-right: 0 !important;
+    padding-bottom: 0;
+  }
+}
+
+// signup buttons
+.signup-buttons {
+  margin-top: 2rem;
+
+  .icon-wrapper {
+    width: 26px;
+    display: block;
+    margin-right: 2rem;
+    height: 18px;
+
+    svg {
+      width: auto;
+      display: block;
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .signup-button {
+    &:not(:last-child) {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  .signup-button a,
+  .google-login {
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.325rem 1.25rem !important;
+    width: 360px;
+    border-radius: 4px;
+
+    &:not(.btn-link) {
+      color: $color-white;
+
+      &:hover {
+        color: $color-white;
+        opacity: 0.9;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .google-login {
+    border-radius: 4px !important;
+    font-family: inherit !important;
+    font-size: 1rem !important;
+
+    >div {
+      width: 26px;
+      display: block;
+      margin-right: 2rem !important;
+      height: 18px;
+      padding: 0 !important;
+
+      svg {
+        width: auto;
+        display: block;
+        height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    >span {
+      padding: 0 !important;
+    }
+  }
+
+  .button-salesforce {
+    background-color: #01a0e1;
+  }
+
+  .button-google {
+    background-color: #4287f6;
+  }
+
+  .button-office {
+    background-color: #d93c01;
+  }
+
+  .button-linkedin {
+    background-color: #0277b6;
+  }
+
+  .btn-link {
+    color: $color-cerulean;
+  }
+}

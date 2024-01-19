@@ -1,0 +1,41 @@
+// media breakpoint mixins
+@mixin mobile-xxs {
+  @media (max-width: #{460px}) {
+    @content;
+  }
+}
+@mixin mobile-xs {
+  @media (max-width: #{575px}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{767px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{991px}) {
+    @content;
+  }
+}
+@mixin small-desktop {
+  @media (max-width: #{1200px}) {
+    @content;
+  }
+}
+@mixin medium-desktop {
+  @media (max-width: #{1366px}) {
+    @content;
+  }
+}
+
+@mixin force-width($w) {
+  max-width: $w;
+  min-width: $w;
+  width: 100%;
+}
+
+@mixin transition($property, $duration, $style) {
+  transition: $property $duration $style;
+}

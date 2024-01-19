@@ -1,0 +1,138 @@
+// banner styles
+.section {
+  &.banner {
+    padding: 78px 0 78px;
+    background-position: center;
+    &.banner-big {
+      padding: 107px 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    .container {
+      padding: 0 56px;
+    }
+  }
+  &.banner-xsmall {
+    padding: 0.8125rem 2.5rem 1.25rem 4.125rem;
+    .h1 {
+      font-size: 1.5rem !important;
+      line-height: 2.25rem;
+      margin-bottom: 0.125rem;
+    }
+  }
+  &.banner-box {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    .h1 {
+      font-size: 1.75rem !important;
+      line-height: 2rem;
+      font-weight: 300;
+    }
+    p {
+      margin: 0.875rem 0 0;
+      font-size: 0.875rem;
+      font-weight: 300;
+      padding: 0 0.125rem;
+    }
+    .btn {
+      margin: 1rem 0 0;
+      width: 100%;
+      font-size: 0.875rem;
+      &.outline-bold {
+        border-width: 1px;
+      }
+    }
+    .container {
+      padding: 0;
+    }
+    .section-content {
+      flex-direction: column;
+    }
+  }
+  @include mobile {
+    &.banner {
+      padding: 50px 0 40px;
+      &.banner-big {
+        padding: 40px 0;
+      }
+      .container {
+        padding: 0 1.25rem;
+      }
+    }
+    &.banner-box {
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  .section-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .logo-wrapper {
+    margin-right: 2.5rem;
+    min-width: 100px;
+    max-height: 71px;
+    img {
+      max-height: 71px;
+    }
+  }
+  .content-wrapper {
+    max-width: 580px;
+    color: $color-white;
+    margin: 0.5rem 0 0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 900;
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+    h1 {
+      font-size: 2.375rem;
+      line-height: 2.875rem;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .btn {
+    white-space: nowrap;
+    margin-left: 2rem;
+  }
+  // responsive banner styles
+  @include tablet {
+    .logo-wrapper {
+      min-width: 1px;
+      max-width: 250px;
+    }
+  }
+  @include mobile {
+    .section-content {
+      flex-direction: column;
+      .logo-wrapper {
+        margin: 0 0 2rem;
+      }
+    }
+    .btn {
+      margin: 2rem 0 0;
+    }
+  }
+}

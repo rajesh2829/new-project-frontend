@@ -1,0 +1,137 @@
+// admin page tabs
+
+.admin-tabs {
+  &.nav-tabs {
+    border-bottom: 2px solid $tab-inactive-border;
+
+    .nav-item {
+      margin-bottom: -2px;
+
+      .nav-link {
+        border-width: 0 0 2px;
+        border-color: transparent;
+        border-style: solid;
+        border-radius: 0;
+        padding: 0.875rem 1.25rem;
+        cursor: pointer;
+        color: rgba(41, 41, 52, 0.5);
+
+        &.active {
+          border-bottom-color: $color-cerulean;
+          background-color: transparent;
+          color: $color-dark;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .admin-tabs {
+    flex-wrap: nowrap !important;
+    white-space: nowrap;
+    overflow: auto;
+  }
+
+  .admin-tabs::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
+}
+
+.tabs-and-preview {
+  &:last-child {
+    margin-bottom: 2.25rem;
+  }
+
+  &.full-width {
+    .tab-content {
+      max-width: none;
+      margin-right: 0;
+
+      .form-wrapper {
+        &:not(.w-360):not(.w-300) {
+          max-width: calc(100% - 300px);
+        }
+      }
+    }
+  }
+
+  .tab-content-wrapper {
+    padding: 1.25rem;
+    background-color: $color-white;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .tab-content {
+    .price {
+      width: 160px;
+    }
+
+    max-width: 390px;
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  &.admin-settings {
+    .form-wrapper {
+      .field-wrapper {
+        &:not(:last-child) {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .form-wrapper {
+    .field-wrapper {
+      &.flex-column {
+        .form-group {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .form-group {
+        margin-bottom: 0;
+
+        label {
+          color: $color-dark;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    +.btn-wrapper {
+      &:last-child {
+        margin-top: 2.25rem;
+      }
+    }
+  }
+
+  form+ {
+    .admin-action-navigation {
+      background-color: $color-background-gray;
+      margin: 1.5rem -1.25rem -1.25rem;
+      padding: 1.5rem 0 0;
+    }
+  }
+
+  .w-360,
+  .w-300 {
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  .w-360 {
+    max-width: 390px;
+  }
+
+  .w-300 {
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,43 @@
+.user-list {
+  font-size: 12px;
+}
+
+.sidebar-menu {
+  width: 300px;
+  display: inline-table;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 7;
+
+  &.open {
+    -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+
+  .menu {
+    >li {
+      >a {
+        padding: 15px 20px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.sidbar-minheight {
+  min-height: 20px;
+}
+
+@media screen and (max-width: 1098px) {
+  .product-pagetitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: max(15vw, 230px) !important;
+  }
+}
